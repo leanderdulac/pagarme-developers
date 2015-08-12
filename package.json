@@ -1,0 +1,22 @@
+{
+  "name": "pagarme-developers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pagarme/pagarme-developers.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pagarme/pagarme-developers/issues"
+  },
+  "homepage": "https://github.com/pagarme/pagarme-developers",
+  "dependencies": {
+    "bower": "^1.4.1"
+  }
+}
