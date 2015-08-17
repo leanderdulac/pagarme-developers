@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<ul class="posts-list">
+  {% for page in site.categories['devops'] %}
+    <li>
+      <a class="posts-list-title" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+      <div class="post-meta">
+        {{ page.author }} em {{ page.date | date: "%d/%m/%Y" }} | <a href="/blog/{{ page.categories }}/">{{ page.categories }}</a>
+      </div>
+    </li>
+  {% endfor %}
+</ul>

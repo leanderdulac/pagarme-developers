@@ -3,7 +3,6 @@
  */
 .highlight {
     background: #fff;
-    @extend %vertical-rhythm;
 
     .c     { color: #998; font-style: italic } // Comment
     .err   { color: #a61717; background-color: #e3d2d2 } // Error
@@ -64,4 +63,21 @@
     .vg    { color: #008080 } // Name.Variable.Global
     .vi    { color: #008080 } // Name.Variable.Instance
     .il    { color: #099 } // Literal.Number.Integer.Long
+}
+
+.highlight {
+  @extend .border-top-1;
+  @extend .border-bottom-1;
+  @extend .margin-bottom-3;
+  @extend .padding-top-3;
+  @extend .padding-bottom-3;
+}
+
+.highlight pre {
+  @extend .margin-0;
+  font-size: inherit;
+}
+
+.highlight .lineno {
+  opacity: 0.35;
 }

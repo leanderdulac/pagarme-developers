@@ -1,0 +1,26 @@
+.footer {
+	@extend .margin-top-4;
+	@extend .padding-top-4;
+	@extend .padding-bottom-4;
+    @extend .font-title;
+    background: #e7e7e7;
+    color: #868686;
+}
+
+
+.footer .footer-list-title {
+	font-size: 15px;
+}
+
+.footer .footer-list {
+	@extend .list-style-type-none;
+	@extend .font-size-1;
+}
+
+.footer .footer-list li {
+	@extend .margin-bottom-0;
+}
+
+.footer .footer-list li a {
+	font-size: 15px;
+}

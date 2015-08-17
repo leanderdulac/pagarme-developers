@@ -1,23 +1,43 @@
 ---
-layout: default
+layout: base
+title: "Pagar.me Developers"
 ---
 
-<div class="home">
+{% include header.html %}
 
-  <h1 class="page-heading">Posts</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <ul class="posts-list">
+        {% for page in site.posts %}
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+              <li>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+                <div class="post">
+                  <header class="post-header">
+                    <h1 class="post-title">
+                      <a href="{{ page.url }}" class="color-gray-dark">{{ page.title }}</a>
+                    </h1>
+                    <div class="post-meta">
+                      {{ page.author }} em {{ page.date | date: "%d/%m/%Y" }} | <a href="/blog/{{ page.categories }}/">{{ page.categories }}</a>
+                    </div>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+                  </header>
 
+                  <article class="post-content">
+                    {{ page.content }}
+                  </article>
+                </div>
+
+              </li>
+
+        {% endfor %}
+      </ul>
+
+      <div class="divider-width-100"></div>
+
+    </div>
+  </div>
 </div>
+
+{% include footer.html %}

@@ -1,20 +1,14 @@
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+title: Pagar.me Developers
+description: Um blog feito pelos desenvolvedores do Pagar.me
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://developers.pagar.me" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+disqusid_shortname: pagarme
 
-# Build settings
 markdown: kramdown
-
-# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics: UA-44419105-6
+paginate: 100
+permalink: /blog/:categories/:title
+paginate_path: /blog/pagina/:num/
 
 # Exclude development-only stuff
 exclude: ['.bowerrc', '.gitignore', '_config.yml', 'bower.json', 'feed.xml', 'gulpfile.js', 'package.json', 'LICENSE', 'README.md', 'source', 'node_modules', 'vendor']
