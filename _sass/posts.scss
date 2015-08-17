@@ -1,0 +1,84 @@
+.post-content a {
+  font-weight: bold;
+}
+
+.post-meta {
+  @extend .font-title;
+  @extend .font-size-0;
+  @extend .margin-bottom-3;
+}
+
+.post-meta-icon {
+  width: 20px;
+  vertical-align: middle;
+  margin-right: 4px;
+  margin-top: -3px;
+}
+
+.post-overflow-25 {
+  margin-left: -12.5%;
+  margin-right: -12.5%;
+}
+
+.post-overflow-50 {
+  margin-left: -25%;
+  margin-right: -25%;
+}
+
+.post-overflow-100 {
+  margin-left: -50%;
+  margin-right: -50%;
+}
+
+.post-impact-1 {
+  @extend .post-overflow-50;
+  @extend .margin-top-4;
+  @extend .margin-bottom-4;
+  text-align: center;
+}
+
+.post-impact-1 h2 {
+  @extend .font-title;
+  @extend .font-size-4;
+  @extend .font-weight-bold;
+  @extend .border-bottom-1;
+  @extend .padding-bottom-2;
+  @extend .margin-bottom-2;
+}
+
+.post-impact-1 p {
+  @extend .font-size-3;
+}
+
+
+/*
+ * RESPONSIVE
+ */
+
+
+@media only screen and (min-width:768px) and (max-width: 991px) {
+
+  .post-overflow-25,
+  .post-overflow-50,
+  .post-overflow-100 {
+    margin-left: -4%;
+    margin-right: -4%;
+  }
+
+  .post-impact-1 img {
+    width: 100%;
+  }
+
+}
+
+
+@media only screen and (max-width:767px) {
+
+  .post-overflow-25,
+  .post-overflow-50,
+  .post-overflow-100 {
+    margin-left: -2%;
+    margin-right: -2%;
+  }
+
+}

@@ -1,0 +1,136 @@
+$font-title: 'Titillium Web', sans-serif;
+$font-body: 'Merriweather', sans-serif;
+
+$font-size-0: 12px;
+$font-size-1: 18px;
+$font-size-2: 22px;
+$font-size-3: 36px;
+$font-size-4: 50px;
+
+.font-title {
+  font-family: $font-title;
+}
+
+.font-title {
+  font-family: $font-title;
+}
+
+.font-size-0 {
+  font-size: $font-size-0;
+  line-height: 18px;
+}
+
+.font-size-1 {
+  font-size: $font-size-1;
+}
+
+.font-size-2 {
+  font-size: $font-size-2;
+  line-height: 31px;
+}
+
+.font-size-3 {
+  font-size: $font-size-3;
+  line-height: 50px;
+}
+
+.font-size-4 {
+  font-size: $font-size-4;
+  line-height: 50px;
+}
+
+.font-weight-light {
+  font-weight: 300;
+}
+
+.font-weight-normal {
+  font-weight: 400;
+}
+
+.font-weight-bold {
+  font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+.h1,
+.h2,
+.h3 {
+  font-family: $font-title;
+  font-weight: 700;
+  color: $gray-dark;
+}
+
+h1,
+.h1 {
+  @extend .font-size-4;
+  letter-spacing: -2px;
+  margin: 0 0 8px 0;
+}
+
+h2,
+.h2 {
+  @extend .font-size-3;
+  letter-spacing: -0.72px;
+  margin: 40px 0 4px -1.8px;
+}
+
+h3,
+.h3 {
+  @extend .font-size-2;
+  letter-spacing: -0.72px;
+  margin: 30px 0 4px -1.8px;
+  margin: 30px 0 4px -1.8px;
+}
+
+
+p {
+  font-family: $font-body;
+  color: $gray-dark;
+  font-size: inherit;
+  letter-spacing: -0.1px;
+  line-height: inherit;
+  @extend .margin-top-0;
+  @extend .margin-right-0;
+  @extend .margin-bottom-3;
+  @extend .margin-left-0;
+}
+
+code {
+  font-size: inherit;
+}
+
+
+
+
+/*
+ * RESPONSIVE
+ */
+
+@media only screen and (max-width:767px) {
+
+  .font-size-0 {
+    font-size: $font-size-0;
+  }
+
+  .font-size-1 {
+    font-size: $font-size-1;
+  }
+
+  .font-size-2 {
+    font-size: $font-size-2;
+    line-height: 25px;
+  }
+
+  .font-size-3 {
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  .font-size-4 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+}

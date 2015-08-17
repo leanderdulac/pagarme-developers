@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<ul class="posts-list">
+  {% for page in paginator.posts %}
+    <li>
+      <a class="posts-list-title" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+      <div class="post-meta">
+        {{ page.author }} em {{ page.date | date: "%d/%m/%Y" }} | <a href="/blog/{{page.categories }}/">{{page.categories }}</a>
+      </div>
+
+    </li>
+  {% endfor %}
+</ul>
+
+<div class="divider-width-100"></div>
+
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="pagination-previous">« Anterior</a>
+  {% endif %}
+  <span class="pagination-page-numbers">Página {{ paginator.page }} de {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="pagination-next">Próxima »</a>
+  {% endif %}
+</div>

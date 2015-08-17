@@ -1,20 +1,17 @@
-<!DOCTYPE html>
-<html>
+---
+layout: base
+---
 
-  {% include head.html %}
+{% include header.html %}
 
-  <body>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
 
-    {% include header.html %}
+      {{ content }}
 
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
     </div>
+  </div>
+</div>
 
-    {% include footer.html %}
-
-  </body>
-
-</html>
+{% include footer.html %}

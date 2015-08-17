@@ -1,0 +1,28 @@
+.navbar-logo:hover {
+	text-decoration: none;
+}
+
+.navbar-logo .navbar-logo-img {
+	@extend .margin-right-1;
+	width: 50px;
+}
+
+.navbar-logo .navbar-logo-text {
+	@extend .font-title;
+	@extend .font-size-1;
+	@extend .font-weight-bold;
+}
+
+.navbar-categories {
+	@extend .font-title;
+	@extend .font-size-1;
+	
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-categories li {
+	@extend .margin-left-2;
+	display: inline;
+}
